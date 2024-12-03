@@ -5,8 +5,8 @@ toggleButton.addEventListener("click", function() {
 
   // Alterar texto do botão conforme o tema
   if (document.body.classList.contains("dark-theme")) {
-    toggleButton.innerText = "Tema Claro";
+    toggleButton.innerHTML = "<img src='./images/sol.png' alt='Tema claro'>";
   } else {
-    toggleButton.innerText = "Tema Escuro";
+    toggleButton.innerHTML = "<img src='./images/lua.png' alt='Tema escuro'>";
   }
 });
