@@ -1,0 +1,133 @@
+:root {
+  --cor-fundo-claro: #bfb2a3;
+  --cor-secundaria-claro: #262515;
+  --principal-claro: #8c673a;
+  --cor-fundo-escuro: #262515;
+  --cor-secundaria-escuro: #bfb2a3;
+  --principal-escuro: #a66a96;
+}
+
+body {
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-secundaria-claro);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--principal-claro);
+  padding: 20px;
+  color: var(--cor-fundo-claro);
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--cor-fundo-claro);
+  color: var(cor-secundaria-claro);
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: var(--cor-secundaria-claro);
+    color: var(--cor-fundo-claro);
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--principal-claro);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: var(--cor-fundo-escuro);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--cor-secundaria-escuro);
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--principal-claro);
+  border-radius: 5px;
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-secundaria-claro);
+
+  &:focus {
+    outline: none;
+    border-color: var(--principal-escuro);
+  }
+}
+form {
+  button {
+    background-color: var(--principal-claro);
+    color: var(--cor-fundo-claro);
+    font-size: 16px;
+
+    &:hover {
+      background-color: var(--cor-fundo-claro);
+      color: var(--cor-secundaria-claro);
+    }
+  }
+}
+
+/* Tema escuro */
+body.dark-theme {
+  background-color: var(--cor-fundo-escuro);
+  color: var(--cor-secundaria-escuro);
+
+  header {
+    background-color: var(--principal-escuro);
+    color: var(--cor-secundaria-escuro);
+  }
+
+  form {
+    background-color: var(--cor-secundaria-escuro);
+    color: var(--cor-fundo-escuro);
+
+    label {
+      color: var(--cor-fundo-escuro);
+    }
+
+    button {
+      background-color: var(--principal-escuro);
+      color: var(--cor-fundo-escuro);
+      font-size: 16px;
+  
+      &:hover {
+        background-color: var(--cor-fundo-escuro);
+        color: var(--cor-secundaria-escuro);
+      }
+    }
+  }
+
+  h2 {
+    color: var(--principal-escuro);
+  }
+}

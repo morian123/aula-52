@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema Claro/Escuro com Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="titulo">Tema Claro/Escuro</h1>
+    <button id="toggle-theme">Alternar Tema</button>
+  </header>
+  <main>
+    <h2>Cadastro de Usuário</h2>
+    <form id="user-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </main>
+  <script src="toggleTheme.js" type="module"></script>
+</body>
+</html>
