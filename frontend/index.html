@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tema Claro/Escuro com Formulário</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1 id="titulo">Tema Claro/Escuro</h1>
-    <button id="toggle-theme">Alternar Tema</button>
-  </header>
-  <main>
-    <h2>Cadastro de Usuário</h2>
-    <form id="user-form">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrismaNews</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 id="titulo">PrismaNews</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+        </ul>
+      </nav>
+      <button id="toggle-theme">Alternar Tema</button>
+    </header>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <main>
+      <h2>Bem-vindo a nossa Newsletter!</h2>
+      <p>
+        Este projeto tem como objetivo fornecer atualizações e novidades sobre o
+        nosso curso de programação. Ao se cadastrar na nossa newsletter, você
+        será o primeiro a saber sobre:
+      </p>
+      <ul>
+        <li>Novos conteúdos sobre desenvolvimento web.</li>
+        <li>Aulas práticas e tutoriais sobre as principais tecnologias.</li>
+        <li>
+          Dicas exclusivas para melhorar suas habilidades como desenvolvedor.
+        </li>
+      </ul>
+      <p>Cadastre-se abaixo e fique por dentro de todas as novidades!</p>
+    </main>
 
-      <label for="password">Senha:</label>
-      <input type="password" id="password" name="password" required>
+    <footer>
+      <p>&copy; 2024 Projeto Newsletter - Todos os direitos reservados.</p>
+    </footer>
 
-      <button type="submit">Cadastrar</button>
-    </form>
-  </main>
-  <script src="toggleTheme.js" type="module"></script>
-</body>
+    <script src="toggleTheme.js" type="module"></script>
+  </body>
 </html>
