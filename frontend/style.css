@@ -19,7 +19,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 header {
   width: 100%;
   display: flex;
@@ -27,43 +26,72 @@ header {
   align-items: center;
   background-color: var(--principal-claro);
   color: var(--cor-fundo-claro);
+}
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  display: flex;
+  align-items: center;
+}
 
-    .nav-links {
-      margin-right: 1rem;
-      list-style: none;
-      display: flex;
-      gap: 15px;
+.nav-links {
+  margin-right: 1rem;
+  list-style: none;
+  display: flex;
+  gap: 15px;
 
-      li {
-        display: inline;
-      }
+  a {
+    color: var(--cor-fundo-claro);
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
 
-      a {
-        color: var(--cor-fundo-claro);
-        text-decoration: none;
-        font-weight: bold;
-      }
-    }
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  img {
+    width: 24px;
+  }
+}
+
+/* Estilo do botão de menu (hambúrguer) */
+#nav-toggle {
+  display: none; /* Será mostrado no mobile */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--cor-fundo-claro);
+}
+
+/* Tornar o menu de navegação responsivo */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Esconde no mobile */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: var(--principal-claro);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100; /* Garante que fique sobreposto */
   }
 
-  button {
-    background: none;
-    border: none;
-    cursor: pointer;
+  .nav-links-active {
+    display: flex; /* Mostra no mobile quando ativo */
+  }
 
-    img {
-      width: 24px;
-    }
+  #nav-toggle {
+    display: block; /* Exibe o botão hambúrguer */
   }
 }
 
 main {
-  padding: 1.2rem;
+  margin: 1.2rem;
   max-width: 600px;
   width: 100%;
   border: none;
