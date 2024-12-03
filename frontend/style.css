@@ -22,19 +22,20 @@ body {
 
 header {
   width: 100%;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: var(--principal-claro);
   color: var(--cor-fundo-claro);
 
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     .nav-links {
+      margin-right: 1rem;
       list-style: none;
       display: flex;
       gap: 15px;
@@ -50,10 +51,6 @@ header {
       }
     }
   }
-}
-
-h1 {
-  margin: 0;
 }
 
 button {
@@ -122,6 +119,12 @@ main {
         border-color: var(--principal-escuro);
       }
     }
+  }
+
+  p a {
+    color: var(--cor-secundaria-claro);
+    text-decoration: none;
+    font-weight: 700;
   }
 }
 
